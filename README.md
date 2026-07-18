@@ -5,13 +5,18 @@ Prerequisites before installing:
     Python 3.7+
 
 Installing instructions:
-First clone the repo or download 
-chmod +x wifitest.sh
-pip install -r requirements.txt
-sudo airodump-ng <wlan0>
+First clone the repo or download \\
+
+    sudo airodump-ng <wlan0>
+    
+    chmod +x wifitest.sh
+    
+    pip install -r requirements.txt
+    
+     
 take bssid & channel 
 
-sudo ./wifitest or bash wifitest.sh <bssid> <channel> <wordlists>
+     sudo ./wifitest or bash wifitest.sh <bssid> <channel> <wordlists>
 
 Disclaimer
 Educational Purposes Only
