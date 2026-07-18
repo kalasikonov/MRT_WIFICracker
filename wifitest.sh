@@ -18,7 +18,7 @@ if [ $# -lt 3 ]; then
     echo "sudo ./wifi.sh <BSSID> <CHANNEL> <WORDLIST>"
     echo
     echo "Example:"
-    echo "sudo ./wifitest.sh 40:3F:8C:F7:E2:4A 6 /usr/share/wordlists/rockyou.txt"
+    echo "sudo ./wifitest.sh <BSSID> <CHANNEL> <WORDLISTS>"
     exit 1
 fi
 
